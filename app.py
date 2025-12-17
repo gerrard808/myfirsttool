@@ -34,7 +34,7 @@ if st.button("开始深度分析 🚀"):
             with st.spinner(f"正在全网搜索 '{product_name}' 的差评与吐槽... 请稍候..."):
                 
                 # 配置 Gemini 模型 (使用支持搜索的 gemini-1.5-flash 或 pro)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-pro')
                 
                 # 核心 Prompt：强制要求使用 Google Search 工具
                 # 注意：Streamlit 社区版服务器可能需要特定的工具配置，
